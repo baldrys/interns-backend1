@@ -35,7 +35,9 @@
     {
       "success": true,
       "data": {
-        "config_data": "Ваше Значение TEST_CONFIG_VALUE Из .env Файла"
+          "config": {
+            "test_config_value": "Ваше Значение TEST_CONFIG_VALUE Из .env Файла"
+          }
        }
     }
 ```
