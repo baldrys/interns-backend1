@@ -11,21 +11,34 @@
 5.  создать роут GET task1/hello_world - связать с Task1Controller@helloWorld
 6.  создать роут GET task1/uuid - связать с Task1Controller@uuid
 6.  установить (найти в packagist.org) ramsey/uuid и сделать 2й роут (пример ниже)
-
+7.  создать роут GET task1/data_from_config
+8.  добавьте TEST_CONFIG_VALUE="someData" в .env файл
 
 **Результат:**
 1.  роут GET task1/hello_world - возвращает строку "Hello world"
 2.  роут GET task1/uuid - возвращает сгенерированный Uuid::uuid1(); в формате:
-
   
 **/task1/uuid должен возвращать данные в следующем формате, через response()->json()**
 
+```
     {
       "success": true,
       "data": {
         "uuid": "сгенерированный uuid1"
       }
     }
+```
+
+3.  роут GET task1/data_from_config - возвращает данные из .env файла (TEST_CONFIG_VALUE) 
+
+```
+    {
+      "success": true,
+      "data": {
+        "config_data": "Ваше Значение TEST_CONFIG_VALUE Из .env Файла"
+       }
+    }
+```
 
 
 **Что посмотреть \ почитать**
