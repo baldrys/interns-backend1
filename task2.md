@@ -5,6 +5,8 @@
 
 **т.к. мы начинаем делать API - ваши роуты должны быть в routes/api.php**
 
+**Контроллер:** app/Http/Controllers/V0/UserProfilesController.php
+
 Подзадачи:
 1.  Создать миграцию таблицы **user_profiles** со следующей структурой:
     1. id - increments
