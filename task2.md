@@ -13,7 +13,6 @@
 2. Создать сидер и заполнять таблицы через php artisan:seed - 10 профилей  с верными данными (например пользователь с данным user_id тоже должен быть добавлен)
 3. сделать роуты ниже
 
-
 **Результат:**
 1.  роут GET api/v0/users/profile/{id}
 
@@ -147,3 +146,4 @@ https://laravel.com/docs/5.7/queries
 ## Полезные ссылки
 1.  https://laravel.com/docs/5.7/migrations
 2.  https://laravel.com/docs/5.7/seeding
+3.  https://laravel.com/docs/5.7/eloquent
