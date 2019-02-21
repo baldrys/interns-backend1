@@ -10,7 +10,7 @@
     1. id - increments
     2. name - string
     3. user_id - foreign key (id в таблице users) on delete set null
-2. Создать модель UserProfile в App/Models/User
+2. Создать модель UserProfile в app/Models/User
 3. Создать сидер и заполнять таблицы через php artisan:seed - 10 профилей  с верными данными (например пользователь с данным user_id тоже должен быть добавлен)
 4. сделать роуты ниже
 
