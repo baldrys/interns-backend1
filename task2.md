@@ -150,3 +150,4 @@ https://laravel.com/docs/5.7/queries
 1.  https://laravel.com/docs/5.7/migrations
 2.  https://laravel.com/docs/5.7/seeding
 3.  https://laravel.com/docs/5.7/eloquent
+4.  https://laravel.com/docs/5.7/migrations#foreign-key-constraints
