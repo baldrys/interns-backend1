@@ -151,3 +151,13 @@ https://laravel.com/docs/5.7/queries
 2.  https://laravel.com/docs/5.7/seeding
 3.  https://laravel.com/docs/5.7/eloquent
 4.  https://laravel.com/docs/5.7/migrations#foreign-key-constraints
+
+
+# Ответы на вопросы
+### user_id - foreign key (id в таблице users) on delete set null (?)
+почитайте про внешние ключи, кто не знает
+https://github.com/2UP/interns-portal-api/blob/master/database/migrations/2018_10_10_092322_alter_registration_keys_change_course.php
+в этой миграции есть пример  с внешними ключами
+учитывайте что перед rollback'ом их обязательно нужно дропать (исключение только если дропаете всю таблицу)
+onupdate cascade пусть так и остается
+
