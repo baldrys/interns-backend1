@@ -123,3 +123,10 @@ https://laravel.com/docs/5.7/validation#form-request-validation
 ## Полезные ссылки
 1.  https://medium.com/@dinotedesco/laravel-api-resources-what-if-you-want-to-manipulate-your-models-before-transformation-8982846ad22c
 2.  https://laravel.com/docs/5.7/eloquent-resources
+
+# Вопросы ответы
+### Валиадция параметров, там же параметр только 1 в первом запросе(name  - POST api/v0/users/group)  только его валидировать? А для проверки параметров в url (api/v0/user/{userId}/group/{groupId}) как ты говорил, лучше model bindings использовать.
+Да
+### Правильно ли я понимаю что между users и groups на самом деле отношение многие ко многим и эта связь через дополнительную таблицу user_groups.
+Да
+
