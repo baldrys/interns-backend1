@@ -112,7 +112,7 @@ name - string
 Раздел 'Writing The Validation Logic' https://laravel.com/docs/5.7/validation
 
 3. Разобраться с Relations - https://laravel.com/docs/5.7/eloquent-relationships
-и использовать one to many
+и использовать one to many / many to many
 
 # дополнительно: если сможете разобраться - сразу выносите валидацию в Request
 https://laravel.com/docs/5.7/validation#form-request-validation
