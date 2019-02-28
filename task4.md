@@ -13,8 +13,10 @@
     
 2.  Добавить новые роуты (api/v1) в группу с middleware auth:api
 3.  Добавить кастомный middleware StopBanned
+
 3.1 Делать проверку флага у юзера (в лк есть пример) если banned = true возвращаем abort 403 с сообщением "Your account was banned"
 4.  Добавить кастомный middleware AdminOnly
+
 4.1 Делать проверку enum'а role у юзера должен быть = Admin
 
 ## Пример
