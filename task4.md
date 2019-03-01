@@ -100,9 +100,10 @@ api:auth + admin_only + stop_banned
 api:auth + admin_only + stop_banned
 
 **Параметры:**
-1. name
-2. role
-3. banned - boolean
+1. api_token
+2. name
+3. role
+4. banned - boolean
 
 **Пример ответа: (выводить через resource - а лучше через transformer)**
 ```
