@@ -15,9 +15,9 @@
     1. github_id integer - id репозитория на github
     2. github_user_id - foreign key (github_users.id)
     3. name - название репозитория ex. github-api
-    4. description
-    5. private
-    6. language
+    4. description string
+    5. private boolean
+    6. language string
 
 3. github_issues
     1. id
