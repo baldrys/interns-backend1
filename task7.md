@@ -9,6 +9,10 @@
 1.  Зарегистрироваться на https://mailtrap.io/
 2.  В .env вписать smtp сервер \ логин \ пароль от mailtrap 
 3.  Все ваши письма (на любой email!) должны попадать в ваш inbox в mailtrap
+4.  queue driver у вас должен быть - database и что бы очеред работала в отдельном терминале выполняете php artisan queue:work --tries=3
+5.  Все письма должны отправляться из очереди т.е. вы пушите в очередь Queue::push(new YourEmailJob)
+**Пример работы с письмами:**
+https://github.com/2UP/interns-portal-api/blob/d116472b3054eddffef0bcb91ccbdc3ba87b805b/app/Support/Notifications/Notifiers/EmployeeNotifier.php#L62
 
 ### Вьюшки ваших писем
 1. css писать не надо, html будет достаточно - вывести в самом простом виде, главное, чтобы вся нужная информация была
