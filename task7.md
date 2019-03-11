@@ -11,6 +11,7 @@
 3.  Все ваши письма (на любой email!) должны попадать в ваш inbox в mailtrap
 4.  queue driver у вас должен быть - database и что бы очеред работала в отдельном терминале выполняете php artisan queue:work --tries=3
 5.  Все письма должны отправляться из очереди т.е. вы пушите в очередь Queue::push(new YourEmailJob)
+
 **Пример работы с письмами:**
 https://github.com/2UP/interns-portal-api/blob/d116472b3054eddffef0bcb91ccbdc3ba87b805b/app/Support/Notifications/Notifiers/EmployeeNotifier.php#L62
 
@@ -44,13 +45,20 @@ $старое_имя => $новое_имя
 
 **Заголовок письма: Обновлены данные пользователя с id: 32**
 
-**Пример содержимого письма:**
+**Примеры содержимого письма:**
 ```
 Пользователь с email someemail@mail.com обновил информацию пользователя с id: 32
 Имя: John Fedor => John Doe
 Роль: Администратоп => Пользователь
-Пользовател забанен!
+Пользователь забанен!
 ```
+```
+Пользователь с email someemail@mail.com обновил информацию пользователя с id: 32
+Имя: John Doe => John Fedor
+Роль: Пользователь
+```
+если пользователь не забанен - последнюю строку (Пользователь забанен!) выводить не нужно
+
 ## Полезные ссылки
 1. https://laravel.com/docs/5.8/mail
 2. https://laravel.com/docs/5.8/queues
