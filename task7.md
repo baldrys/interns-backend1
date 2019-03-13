@@ -19,7 +19,7 @@
 у вас должен быть базовый template (resources/views/emails/layouts/base) ну и все содержимое в отдельной вьюшке 
 
 ## Список роутов в которые нужно добавить email оповещения (+ примеры)
-1. POST     api/v0/user/{user}/group
+1. POST     api/v0/user/group
 
 **Заголовок письма: Добавлена новая группа - $groupName**
 
