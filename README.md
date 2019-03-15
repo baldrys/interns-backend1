@@ -12,3 +12,5 @@
 [Задание 6 дедлайн до 12.03.2019 (12:00)](https://github.com/2UP/interns-backend1/blob/master/task6.md)
 
 [Задание 7 дедлайн до 15.03.2019 (18:00)](https://github.com/2UP/interns-backend1/blob/master/task7.md)
+
+[Задание 8 дедлайн до 20.03.2019 (18:00)](https://github.com/2UP/interns-backend1/blob/master/task8.md)
