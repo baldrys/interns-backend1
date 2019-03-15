@@ -3,18 +3,18 @@
 
 ### Типы пользователей
 1. Admin
-2. Store owner
+2. Store user
 3. Customer
 
 ## Список таблиц
 
-1. users - full_name (string), api_token (string), role (enum - Customer(default), Store owner, Admin)
+1. users - full_name (string), api_token (string), role (enum - Customer(default), Store user, Admin)
 
 2. jobs (создается автоматически)
 
-3. items - store_id (store owner's id), name(string)
+3. items - store_id (store user's id), name(string)
 
-4. item_ingredient - store_id (store owner's id), name(string), price(в USD - float, 2 знака после запятой)
+4. item_ingredient - store_id (store user's id), name(string), price(в USD - float, 2 знака после запятой)
 
 5. item_ingredients - item_id, ingredient_id, amount
 
@@ -133,7 +133,7 @@
     }
 ```
 
-## Store owner роуты (доступно только для customer & admin)
+## Store user роуты (доступно только для customer & admin)
 
 8. POST     /api/v1/store/{store}/items
 
@@ -232,7 +232,7 @@
     }
 ```
 
-## Общий роут для customer и store owner (доступно только для customer & admin)
+## Общий роут для customer и store user (доступно только для customer & admin)
 
 12. PATCH     /api/v1/store/{store}/order/{order}
 
@@ -242,7 +242,7 @@
 1. status прим. "Canceled"
 
 Как работает
-1. store owner может проставить статусы
+1. store user может проставить статусы
 любой => Canceled
 Placed => Approved
 Approved => Shipped
@@ -254,10 +254,10 @@ Shipped => Received
 ## Роуты администратора
 
 13. POST    /api/v1/store/{store}/users
-добавляем store user'а (owner'а)
+добавляем store user'а
 
 13. DELETE    /api/v1/store/{store}/users/{user}
-удаляем store user'а (owner'а)
+удаляем store user'а
 
 ## Доп функционал (в идеале реализовать весь)
 1. Вход & регистрация через GitHub (можно это сделать в т.ч. во вьюшках - главное по email создать \ обновить инфо юзера и получить токен)
