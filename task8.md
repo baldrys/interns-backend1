@@ -9,6 +9,8 @@
 
 ## Тесты
 
+**Нужно покрыть тестами роуты 3й и 4й домашки**
+
 как тестировать это на ваше усмотрение
 
 вариантов несколько (я уверен есть еще варианты, будут мысли - предлагайте)
@@ -41,6 +43,7 @@ https://github.com/2UP/interns-portal-api/blob/d116472b3054eddffef0bcb91ccbdc3ba
 + [Swagger API Docs - EDIT](https://editor.swagger.io/?url=https://raw.githubusercontent.com/2UP/interns-portal-api/master/swagger-api.json)
 
 **Нужно оформить документацию для роутов из 3й и 4й домашки**
+
 
 ## Полезные ссылки
 1. https://laravel.com/docs/5.8/testing
