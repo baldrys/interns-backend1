@@ -12,15 +12,15 @@
 
 2. jobs (создается автоматически)
 
-3. items - store_id (store user's id), name(string)
+3. items - store_id, name(string)
 
-4. item_ingredient - store_id (store user's id), name(string), price(в USD - float, 2 знака после запятой)
+4. item_ingredient - store_id, name(string), price(в USD - float, 2 знака после запятой)
 
 5. item_ingredients - item_id, ingredient_id, amount
 
 6. cart_items - user_id, item_id, amount
 
-7. orders - store_id(user id), customer_id(user id), status (enum) = [Canceled, Placed (default), Approved, Shipped, Received], total_amount
+7. orders - store_id, customer_id(user id), status (enum) = [Canceled, Placed (default), Approved, Shipped, Received], total_amount
 
 8. stores - name (string)
 
