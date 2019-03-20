@@ -133,7 +133,7 @@
     }
 ```
 
-## Store user роуты (доступно только для customer & admin)
+## Store user роуты (доступно только для Store user & admin)
 
 8. POST     /api/v1/store/{store}/items
 
@@ -232,7 +232,7 @@
     }
 ```
 
-## Общий роут для customer и store user (доступно только для customer & admin)
+## Общий роут для customer и store user (доступно только для customer & store user & admin)
 
 12. PATCH     /api/v1/store/{store}/order/{order}
 
