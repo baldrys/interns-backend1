@@ -30,6 +30,10 @@
 
 1. GET      /api/v1/auth/register
 
+**Параметры**
+1. email
+2. password
+
 регистрация через API
 **Пример ответа:**
 ```
@@ -42,6 +46,10 @@
 ```
 
 2. GET      /api/v1/auth/login
+
+**Параметры**
+1. email
+2. password
 
 вход через API
 **Пример ответа:**
@@ -272,3 +280,9 @@ Shipped => Received
 
 ## Полезные ссылки
 1. https://laravel.com/docs/5.8/socialite (этот пакет можно использовать для авторизации через GITHUB)
+
+# Вопросы \ ответы
+### авторизацию надо делать через laravel/passport?
+можно через api_token как в 4й домашке, можно через passport, можно даже через JWT если потянешь https://github.com/tymondesigns/jwt-auth
+
+###
