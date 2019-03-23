@@ -10,21 +10,19 @@
 
 1. users - full_name (string), api_token (string), role (enum - Customer(default), Store user, Admin)
 
-2. jobs (создается автоматически)
+2. items - store_id, name(string)
 
-3. items - store_id, name(string)
+3. item_ingredient - store_id, name(string), price(в USD - float, 2 знака после запятой)
 
-4. item_ingredient - store_id, name(string), price(в USD - float, 2 знака после запятой)
+4. item_ingredients - item_id, ingredient_id, amount
 
-5. item_ingredients - item_id, ingredient_id, amount
+5. cart_items - user_id, item_id, amount
 
-6. cart_items - user_id, item_id, amount
+6. orders - store_id, customer_id(user id), status (enum) = [Canceled, Placed (default), Approved, Shipped, Received], total_amount
 
-7. orders - store_id, customer_id(user id), status (enum) = [Canceled, Placed (default), Approved, Shipped, Received], total_amount
+7. stores - name (string)
 
-8. stores - name (string)
-
-9. store_users (сотрудники магазина) - store_id, user_id
+8. store_users (сотрудники магазина) - store_id, user_id
 
 ### Итоговый список роутов (делаем только API)
 
