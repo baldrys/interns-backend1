@@ -24,6 +24,8 @@
 
 8. store_users (сотрудники магазина) - store_id, user_id
 
+9. order_items order_id, item_id, amount
+
 ### Итоговый список роутов (делаем только API)
 
 1. GET      /api/v1/auth/register
@@ -283,6 +285,7 @@ Shipped => Received
 ### 2019.03.23
 1. В card_items нужно добавить store_id и запретить добавлялть item's разных сторов в корзину
 2. поправка в orders - total price всместо total amount
+3. добавлена таблица order_items (нужно очищать дублировать данные в order_items из корзины, затем очищать корзину пользователя)
 
 # Вопросы \ ответы
 ### авторизацию надо делать через laravel/passport?
