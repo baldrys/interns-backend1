@@ -10,11 +10,11 @@
 
 1. users - full_name (string), api_token (string), role (enum - Customer(default), Store user, Admin)
 
-2. items - store_id, name(string)
+2. items (блюда) - store_id, name(string)
 
-3. item_ingredient - store_id, name(string), price(в USD - float, 2 знака после запятой)
+3. item_ingredient (ингредиенты) - store_id, name(string), price(в USD - float, 2 знака после запятой)
 
-4. item_ingredients - item_id, ingredient_id, amount
+4. item_ingredients (связка блюда - ингредиенты) - item_id, ingredient_id, amount
 
 5. cart_items - user_id, item_id, amount
 
@@ -24,7 +24,7 @@
 
 8. store_users (сотрудники магазина) - store_id, user_id
 
-9. order_items order_id, item_id, amount
+9. order_items (товары заказа) order_id, item_id, amount
 
 ### Итоговый список роутов (делаем только API)
 
