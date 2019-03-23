@@ -300,3 +300,6 @@ Shipped => Received
 
 ### запрос 13 POST /api/v1/store/{store}/users добавляем store user'а нужно создать юзера и передавать имя, email в параметрах как при регистрации?
 да
+
+### после POST /api/v1/cart/checkout корзина для user обнуляется? 
+да
