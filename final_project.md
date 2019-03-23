@@ -62,9 +62,9 @@
 
 ## Customer роуты (доступно только для customer & admin)
 
-3. POST     /api/v1/cart/items
+3. POST     /api/v1/cart/items/{item}
 
-добавляет item в корзину
+добавляет item (таблица items) в корзину
 Параметры: amount
 
 4. DELETE   /api/v1/cart/item/{item}
