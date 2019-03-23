@@ -293,3 +293,6 @@ Shipped => Received
 ### 8 роут POST /api/v1/store/{store}/items  - это по типу такого запроса /api/v1/store/1/items?api_token=zyiyVhWjZy&status=kk&param=toy&param2=car&param3=flower где param в виде такого массива?
 поправка
 /api/v1/store/1/items?api_token=zyiyVhWjZy&status=kk&param[1]=toy&param[2]=car&param[3]=flower
+
+### запрос 13 POST /api/v1/store/{store}/users добавляем store user'а нужно создать юзера и передавать имя, email в параметрах как при регистрации?
+да
