@@ -18,7 +18,7 @@
 
 5. cart_items - user_id, item_id, amount
 
-6. orders - store_id, customer_id(user id), status (enum) = [Canceled, Placed (default), Approved, Shipped, Received], total_amount
+6. orders - store_id, customer_id(user id), status (enum) = [Canceled, Placed (default), Approved, Shipped, Received], total_price
 
 7. stores - name (string)
 
@@ -282,6 +282,7 @@ Shipped => Received
 # Поправки:
 ### 2019.03.23
 1. В card_items нужно добавить store_id и запретить добавлялть item's разных сторов в корзину
+2. поправка в orders - total price всместо total amount
 
 # Вопросы \ ответы
 ### авторизацию надо делать через laravel/passport?
