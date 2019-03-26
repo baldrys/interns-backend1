@@ -163,7 +163,7 @@
     }
 ```
 
-9. PATCH    /api/v1/store/{store}/items
+9. PATCH    /api/v1/store/{store}/items/{item}
 
 обновляет item 
 не обязательные параметры: name + массив ingredients (если массив передан вы затираете текущие ингредиенты новыми)
